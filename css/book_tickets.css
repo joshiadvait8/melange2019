@@ -42,13 +42,14 @@
 .header img{
     padding: 0;
     margin-top: 4vh;
-    max-height: 40px;
+    height: 100px;
+    width: 110px;
 }
 .mobile_image{
     grid-area: mobile_image;
 }
 .mobile_image img{
-    margin-top: -30vh;
+    margin-top: -20vh;
     height: 330px !important;
     width: 160px !important;
 }
@@ -89,6 +90,12 @@
     }
     .header:after{
        transform: skewY(6deg); 
+    }
+    .header img{
+        padding: 0;
+        margin-top: 4vh;
+        height: 150px;
+        width: 160px;
     }
     .mobile_image img{
         margin-top: -35vh;

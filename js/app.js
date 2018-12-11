@@ -34,8 +34,7 @@ dbRefObject.on('child_added',snap=>{
             '</div></div>'
 })
 
-       
-      
+
     
 
     
