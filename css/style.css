@@ -185,7 +185,7 @@ h6 {
 
 #header #logo img {
   padding: 0;
-  margin: 0;
+  margin-left: 5vw !important;
   max-height: 40px;
 }
 
@@ -600,7 +600,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0;
 }
 
-#intro .about-btn {
+#intro .about-btn, #sponsors .about-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -617,10 +617,100 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #f82249;
 }
 
-#intro .about-btn:hover {
+#intro .about-btn:hover, #sponsors .about-btn:hover {
   background: #f82249;
   color: #fff;
 }
+
+#sponsors .about-btn{
+    color: #000;
+    text-align: center;
+}
+#intro img{
+  max-height: 400px ;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    #intro img{
+        max-height: 400px ;
+    }
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    #intro img{
+        max-height: 350px ;
+    }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    #intro img{
+        max-height: 350px ;
+    }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    #intro img{
+        max-height: 350px ;
+    }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    #intro img{
+      max-height: 250px;
+    }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  #intro img{
+    max-height: 100px;
+  }
+  #intro h1 {
+      font-size: 36px;
+  }
+  
+}
+
 
 @-webkit-keyframes pulsate-btn {
   0% {
@@ -1663,11 +1753,4 @@ body.mobile-nav-active #mobile-nav-toggle {
   #subscribe button {
     margin-top: 10px;
   }
-}
-
-/* /* Event Details */
-#eventVenue
-{
-  font-size: 14px;
-  
 }
