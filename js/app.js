@@ -16,11 +16,12 @@ dbRefObject.on('child_added',snap=>{
   var eventName = snap.child("EventName").val();
   var eventcomm = snap.child("MangingCommittee").val();
   var eventTiming = snap.child("EventTiming").val();
+  var eventId = snap.child("EventID").val();
       divCard.innerHTML += ' <div class="col-lg-3 col-md-6"><div  class="hotel">'+
               '<div class="hotel-img">'+
                 '<img src="img/hotels/1.jpg" alt="Hotel 1" class="img-fluid">'+
               '</div>'+
-              '<h3><a href="#">'+eventName+'</a></h3>'+
+              '<h3><a href="eventDetails.html?id='+eventId+'">'+eventName+'</a></h3>'+
               
               '<div class="stars">'+
               
@@ -40,3 +41,4 @@ dbRefObject.on('child_added',snap=>{
     
   
   
+
