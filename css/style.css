@@ -626,9 +626,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #000;
     text-align: center;
 }
-#intro img{
+/*#intro img{
   max-height: 400px ;
-}
+}*/
+
+
 
 /* 
   ##Device = Desktops
@@ -638,9 +640,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (min-width: 1281px) {
   
     #intro img{
-        max-height: 400px ;
+        max-height: 330px ;
     }
-  
+    #intro h1 {
+        font-size: 36px;
+    }
+    #intro p {
+        font-size: 15px;
+    }
 }
 
 /* 
@@ -1089,13 +1096,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #f82249;
 }
 
+
 #hotels p {
   font-weight: 500;
   font-size: 15px;
   margin-bottom: 10px;
   padding: 0 20px;
 }
-
 
 /*--------------------------------------------------------------
 # Gallery Section
